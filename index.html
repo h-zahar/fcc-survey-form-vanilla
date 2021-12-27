@@ -10,6 +10,60 @@
         <title>Survey Form</title>
     </head>
     <body>
-        
+        <div id="container">
+            <h1 id="title">Career Recommender</h1>
+            <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat in cumque repudiandae quos laboriosam, nesciunt perferendis illum deserunt illo dolore nostrum at blanditiis suscipit omnis cum possimus adipisci ducimus!</p>
+            <div id="form-container">
+                <form id="survey-form">
+                    <label for="name" id="name-label">Name</label><br>
+                    <input type="text" id="name" placeholder="Enter your name" required><br>
+                    <label for="emaill" id="email-label">Email</label><br>
+                    <input type="email" id="email" placeholder="Enter your email" required><br>
+                    <label for="number" id="number-label">Age (optional)</label><br>
+                    <input type="number" id="number" min="18" max="32" placeholder="Age"><br>
+                    <label for="">Which profession attracts you?</label><br>
+                    <select id="dropdown">
+                        <option value="" selected>--select</option>
+                        <option value="Doctor">Doctor</option>
+                        <option value="Engineer">Engineer</option>
+                        <option value="Architect">Architect</option>
+                        <option value="Police">Police</option>
+                        <option value="Army">Army</option>
+                        <option value="Researcher">Researcher</option>
+                        <option value="Teacher">Teacher</option>
+                    </select><br>
+                    <p>Are you confident about yourself?</p>
+                    <input type="radio" name="answer" id="definitely" value="Definitely" checked>
+                    <label for="definitely">Definitely</label><br>
+                    <input type="radio" name="answer" id="never" value="Never">
+                    <label for="never">Never</label><br>
+                    <input type="radio" name="answer" id="maybe" value="Maybe">
+                    <label for="maybe">Maybe</label><br>
+
+                    <p>Check if you in which you feel relatable</p>
+                    <input type="checkbox" id="passion" value="Passion">
+                    <label for="passion">Passion</label><br>
+                    <input type="checkbox" id="ambition" value="Ambition">
+                    <label for="ambition">Ambition</label><br>
+                    <input type="checkbox" id="focus" value="Focus">
+                    <label for="focus">Focus</label><br>
+                    <input type="checkbox" id="target" value="Target">
+                    <label for="target">Target</label><br>
+                    <input type="checkbox" id="determination" value="Determination">
+                    <label for="determination">Determination</label><br>
+                    <input type="checkbox" id="relax" value="Relax">
+                    <label for="relax">Relax</label><br>
+                    <input type="checkbox" id="chill" value="Chill">
+                    <label for="chill">Chill</label><br>
+                    <input type="checkbox" id="relax" value="Relax">
+                    <label for="relax">Go with the flow</label><br>
+
+                    <label for="additional">Any aditional Info</label><br>
+                    <textarea id="additional" cols="30" rows="10"></textarea><br>
+                    <input id="submit" type="submit" value="submit">
+                </form>
+            </div>
+        </div>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
 </html>
