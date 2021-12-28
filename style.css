@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: rgb(18, 32, 71) url('https://gf-gis.com/Marketing/Survey/images/SurveyTeam.PNG') center center fixed no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    background-blend-mode: screen;
+    color: white;
+}
+
+#container {
+    max-width: 100%;
+    margin: auto 2%;
+    padding: 40px 0;
+}
+
+#title {
+    color: rgb(21, 21, 63);
+    text-align: center;
+}
+
+#description {
+    color: rgb(21, 21, 63);
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.3em;
+}
+
+#form-container {
+    max-width: 500px;
+    margin: 40px auto 0 auto;
+    padding: 4%;
+    background-color: rgb(18, 32, 71);
+    border: 1px solid rgb(21, 21, 63);
+    border-radius: 0.5%;
+    box-shadow: 1px 1px 10px 4px rgb(18, 32, 71);
+}
+
+.input-fields {
+    width: 100%;
+    padding: 4px 4px;
+}
+
+.label-sizing {
+    display: block;
+    margin: 20px auto 10px auto;
+}
+
+#name-label {
+    margin: 10px auto 10px auto;
+}
+
+.options-sizing {
+    display: inline-block;
+    margin: 2px auto;
+}
+
+#additional {
+    resize: none;
+}
+
+#submit {
+    display: block;
+    margin: 25px auto;
+    padding: 10px 0;
+    font-size: 1em;
+}

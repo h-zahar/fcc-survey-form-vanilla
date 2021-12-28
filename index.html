@@ -7,23 +7,28 @@
 
         <link rel="stylesheet" href="style.css">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Cairo&family=Lobster&family=Mulish&family=Roboto&display=swap" rel="stylesheet">
+
         <title>Survey Form</title>
     </head>
     <body>
         <div id="container">
             <h1 id="title">Career Recommender</h1>
-            <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat in cumque repudiandae quos laboriosam, nesciunt perferendis illum deserunt illo dolore nostrum at blanditiis suscipit omnis cum possimus adipisci ducimus!</p>
+            <p id="description"><strong><em>Thank you so much for having our service. We'd like to encourage you to participate this servey.</em></strong></p>
             <div id="form-container">
                 <form id="survey-form">
-                    <label for="name" id="name-label">Name</label><br>
-                    <input type="text" id="name" placeholder="Enter your name" required><br>
-                    <label for="emaill" id="email-label">Email</label><br>
-                    <input type="email" id="email" placeholder="Enter your email" required><br>
-                    <label for="number" id="number-label">Age (optional)</label><br>
-                    <input type="number" id="number" min="18" max="32" placeholder="Age"><br>
-                    <label for="">Which profession attracts you?</label><br>
-                    <select id="dropdown">
-                        <option value="" selected>--select</option>
+                    <label for="name" id="name-label" class="label-sizing">Name</label>
+                    <input type="text" id="name" class="input-fields" placeholder="Enter your name" required><br>
+                    <label for="emaill" id="email-label" class="label-sizing">Email</label>
+                    <input type="email" id="email" class="input-fields" placeholder="Enter your email" required><br>
+                    <label for="number" id="number-label" class="label-sizing">Age (optional)</label>
+                    <input type="number" id="number" class="input-fields" min="18" max="32" placeholder="Age"><br>
+                    <label for="dropdown" class="label-sizing">Which profession attracts you?</label>
+                    <select id="dropdown" class="input-fields">
+                        <option value="" selected>--Select</option>
                         <option value="Doctor">Doctor</option>
                         <option value="Engineer">Engineer</option>
                         <option value="Architect">Architect</option>
@@ -32,38 +37,37 @@
                         <option value="Researcher">Researcher</option>
                         <option value="Teacher">Teacher</option>
                     </select><br>
-                    <p>Are you confident about yourself?</p>
+                    <p class="label-sizing">Are you confident about yourself?</p>
                     <input type="radio" name="answer" id="definitely" value="Definitely" checked>
-                    <label for="definitely">Definitely</label><br>
+                    <label for="definitely" class="options-sizing">Definitely</label><br>
                     <input type="radio" name="answer" id="never" value="Never">
-                    <label for="never">Never</label><br>
+                    <label for="never" class="options-sizing">Never</label><br>
                     <input type="radio" name="answer" id="maybe" value="Maybe">
-                    <label for="maybe">Maybe</label><br>
+                    <label for="maybe" class="options-sizing">Maybe</label><br>
 
-                    <p>Check if you in which you feel relatable</p>
+                    <p class="label-sizing">Check if you in which you feel relatable</p>
                     <input type="checkbox" id="passion" value="Passion">
-                    <label for="passion">Passion</label><br>
+                    <label for="passion" class="options-sizing">Passion</label><br>
                     <input type="checkbox" id="ambition" value="Ambition">
-                    <label for="ambition">Ambition</label><br>
+                    <label for="ambition" class="options-sizing">Ambition</label><br>
                     <input type="checkbox" id="focus" value="Focus">
-                    <label for="focus">Focus</label><br>
+                    <label for="focus" class="options-sizing">Focus</label><br>
                     <input type="checkbox" id="target" value="Target">
-                    <label for="target">Target</label><br>
+                    <label for="target" class="options-sizing">Target</label><br>
                     <input type="checkbox" id="determination" value="Determination">
-                    <label for="determination">Determination</label><br>
+                    <label for="determination" class="options-sizing">Determination</label><br>
                     <input type="checkbox" id="relax" value="Relax">
-                    <label for="relax">Relax</label><br>
+                    <label for="relax" class="options-sizing">Relax</label><br>
                     <input type="checkbox" id="chill" value="Chill">
-                    <label for="chill">Chill</label><br>
+                    <label for="chill" class="options-sizing">Chill</label><br>
                     <input type="checkbox" id="relax" value="Relax">
-                    <label for="relax">Go with the flow</label><br>
+                    <label for="relax" class="options-sizing">Go with the flow</label><br>
 
-                    <label for="additional">Any aditional Info</label><br>
-                    <textarea id="additional" cols="30" rows="10"></textarea><br>
-                    <input id="submit" type="submit" value="submit">
+                    <label for="additional" class="label-sizing">Any aditional Info</label>
+                    <textarea id="additional" class="input-fields" rows="10"></textarea><br>
+                    <input id="submit" class="input-fields" type="submit" value="submit">
                 </form>
             </div>
         </div>
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
 </html>
